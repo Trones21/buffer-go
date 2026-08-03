@@ -2,6 +2,8 @@
 *.exe
 *.out
 bin/
+# Compiled server binary (built via `go install`/`go build`)
+/cmd/buffer-mcp/buffer-mcp
 # Test artifacts
 *.test
 coverage.out
