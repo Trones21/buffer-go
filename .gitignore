@@ -1,0 +1,10 @@
+# Binaries
+*.exe
+*.out
+bin/
+# Test artifacts
+*.test
+coverage.out
+# Env / secrets — never commit a token
+.env
+.env.*
