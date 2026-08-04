@@ -3,6 +3,25 @@
 Turn free-form ideas into real, scheduled [Buffer](https://buffer.com) posts —
 from Claude, Cursor, or any MCP client.
 
+> ## ⏸️ Status: on hold
+>
+> **Buffer ships an official MCP server** — connected over OAuth in Claude,
+> ChatGPT, and other clients, with tools for channels, posts, ideas, analytics,
+> and raw GraphQL access. That covers the reason this repo existed, so active
+> work here is paused while I evaluate the official one.
+>
+> To be straight about it: this project started from a mistaken premise — that
+> no such adapter existed yet. It does. If you want a Buffer MCP server, use
+> Buffer's.
+>
+> **What may still be worth something here:** the dependency-free Go client
+> (the `buffer` package) is a standalone, standard-library-only typed client for
+> Buffer's GraphQL API — useful to Go developers who want that without an SDK,
+> independent of MCP. The `cmd/buffer-mcp` server is largely redundant with
+> Buffer's official one and its GraphQL documents were never verified against the
+> live schema (see [Status & the introspection step](#status--the-introspection-step)),
+> so don't treat it as production-ready.
+
 `buffer-go` is two things stacked:
 
 1. **A dependency-free Go client** for Buffer's GraphQL API (`buffer` package).
